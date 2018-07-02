@@ -1,0 +1,6 @@
+framework module Pods_app_Calculator {
+  umbrella header "Pods-app-Calculator-umbrella.h"
+
+  export *
+  module * { export * }
+}

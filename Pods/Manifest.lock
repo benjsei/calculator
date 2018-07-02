@@ -1,0 +1,62 @@
+PODS:
+  - Cucumberish (1.1.0)
+  - Differentiator (3.0.2)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
+  - RxAppState (1.0.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxBlocking (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.8.1):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - RxSwift (4.1.2)
+  - RxTest (4.0.0):
+    - RxSwift (~> 4.0)
+  - Swinject (2.1.0)
+
+DEPENDENCIES:
+  - Cucumberish (= 1.1.0)
+  - OHHTTPStubs/Swift (= 6.1.0)
+  - RxAppState (= 1.0.1)
+  - RxBlocking (= 4.0)
+  - RxCocoa (= 4.0)
+  - RxDataSources (~> 3.0)
+  - RxKeyboard (= 0.8.1)
+  - RxTest (= 4.0)
+  - Swinject (= 2.1.0)
+
+SPEC CHECKSUMS:
+  Cucumberish: d56601ffdabf0cf3ee2f6cce13db90430ff2c8f7
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  RxAppState: d4c7f66f92d62e8e4d1d4ea95cd774dea6b64ea0
+  RxBlocking: 923c2c8106d80d7c2d6b276afd66ce3b10824836
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxKeyboard: 28d984440671becc75350b1dfae7ae08d31076df
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTest: 0041e792cede35e53e4749f378d21482af0e9d12
+  Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
+
+PODFILE CHECKSUM: a7eac514331f81bb11971dbbb77fa20930b63983
+
+COCOAPODS: 1.4.0
