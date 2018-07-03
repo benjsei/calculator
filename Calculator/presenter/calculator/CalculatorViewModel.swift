@@ -38,46 +38,43 @@ class CalculatorViewModel: NSObject, ViewModelType {
     
     private var disposeBag = DisposeBag()
     private let errorMessage = "Error"
-    private let formatDoubleString = "%.00f"
-    private let defaultDouble = 0.00
+    private let zeroInt = 0
     
     // MARK: - Private Function
     
     private func getResultDriver(input: Input) -> Driver<String> {
         
-        let field1DoubleObservable = input
-            .field1
-            .map { (field1) -> Double in
-                
-                return self.toDouble(valueString: field1)
-        }
+        let field1IntObservable = getIntObservable(stringObservable: input.field1)
         
-        let field2DoubleObservable = input
-            .field2
-            .map { (field2) -> Double in
-                
-                return self.toDouble(valueString: field2)
-        }
+        let field2IntObservable = getIntObservable(stringObservable: input.field2)
         
         return Observable
-            .combineLatest(field1DoubleObservable, field2DoubleObservable)
+            .combineLatest(field1IntObservable, field2IntObservable)
             .map { (field1,  field2) -> String in
                 
                 let result = field1 + field2
-                let resultString = String(format: self.formatDoubleString, result)
                 
-                return resultString
+                return String(result)
             }
             .asDriver(onErrorJustReturn: errorMessage)
     }
     
-    private func toDouble(valueString: String?) -> Double {
+    private func getIntObservable(stringObservable: Observable<String?>) -> Observable<Int> {
+        
+        return stringObservable
+            .map { (string) -> Int in
+            
+            return self.getInt(valueString: string)
+        }
+    }
+    
+    private func getInt(valueString: String?) -> Int {
         
         guard let valueString = valueString,
-            let valueDouble = Double(valueString) else {
-                return defaultDouble
+            let valueInt = Int(valueString) else {
+                return zeroInt
         }
         
-        return valueDouble
+        return valueInt
     }
 }
