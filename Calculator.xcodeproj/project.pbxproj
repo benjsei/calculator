@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D98A4A1AD096939E2078E36 /* Pods_app_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF1109F4C75B047A5F7EAB2 /* Pods_app_Calculator.framework */; };
-		9E7A856321408ACC4AB34096 /* Pods_app_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F553F231D524DDF05480B138 /* Pods_app_CalculatorTests.framework */; };
 		9F30DEE220EA7398006FB917 /* features in Resources */ = {isa = PBXBuildFile; fileRef = 9F30DEE120EA7397006FB917 /* features */; };
 		9F8DC4E520EA703D00C1D47F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DC4E420EA703D00C1D47F /* CalculatorViewController.swift */; };
 		9F8DC4E720EA705800C1D47F /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8DC4E620EA705800C1D47F /* CalculatorViewModel.swift */; };
@@ -32,9 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FB13DE21E96EAB389255EEF /* Pods-app-CalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-CalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app-CalculatorTests/Pods-app-CalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		424F6EFB05881C0C6E90C388 /* Pods-app-CalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-CalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-app-CalculatorTests/Pods-app-CalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		7738E7B69881CD1C5C9DD42B /* Pods-app-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app-Calculator/Pods-app-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		9F30DEE120EA7397006FB917 /* features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = features; sourceTree = "<group>"; };
 		9F8DC4E420EA703D00C1D47F /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		9F8DC4E620EA705800C1D47F /* CalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
@@ -49,9 +44,6 @@
 		9F97E86B20EA5442008EECF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F97E87020EA5443008EECF1 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F97E87620EA5443008EECF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBF1109F4C75B047A5F7EAB2 /* Pods_app_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F553F231D524DDF05480B138 /* Pods_app_CalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_CalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDED4484769A4A5660E28D0F /* Pods-app-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-app-Calculator/Pods-app-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D98A4A1AD096939E2078E36 /* Pods_app_Calculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,22 +58,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E7A856321408ACC4AB34096 /* Pods_app_CalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		979151AEDFF1C40BBCCC37AB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DBF1109F4C75B047A5F7EAB2 /* Pods_app_Calculator.framework */,
-				F553F231D524DDF05480B138 /* Pods_app_CalculatorTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9F8DC4E220EA703D00C1D47F /* presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +121,6 @@
 				9F97E85E20EA5442008EECF1 /* Calculator */,
 				9F97E87320EA5443008EECF1 /* CalculatorTests */,
 				9F97E85D20EA5442008EECF1 /* Products */,
-				A69809D8566440C48E56ACD6 /* Pods */,
-				979151AEDFF1C40BBCCC37AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,17 +156,6 @@
 			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
-		A69809D8566440C48E56ACD6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7738E7B69881CD1C5C9DD42B /* Pods-app-Calculator.debug.xcconfig */,
-				FDED4484769A4A5660E28D0F /* Pods-app-Calculator.release.xcconfig */,
-				1FB13DE21E96EAB389255EEF /* Pods-app-CalculatorTests.debug.xcconfig */,
-				424F6EFB05881C0C6E90C388 /* Pods-app-CalculatorTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,12 +163,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F97E87920EA5443008EECF1 /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
-				CD7BA77D482184422A278065 /* [CP] Check Pods Manifest.lock */,
 				9F97E85820EA5442008EECF1 /* Sources */,
 				9F97E85920EA5442008EECF1 /* Frameworks */,
 				9F97E85A20EA5442008EECF1 /* Resources */,
-				1A92C23519125B0A6BF7FBF5 /* [CP] Embed Pods Frameworks */,
-				798BA5B44AAA978A9331EF98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,12 +180,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F97E87C20EA5443008EECF1 /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
 			buildPhases = (
-				5D4534A529FCB68752BD678F /* [CP] Check Pods Manifest.lock */,
 				9F97E86C20EA5443008EECF1 /* Sources */,
 				9F97E86D20EA5443008EECF1 /* Frameworks */,
 				9F97E86E20EA5443008EECF1 /* Resources */,
-				EEBA7F04B339B81F421C38C9 /* [CP] Embed Pods Frameworks */,
-				4BE205EA793CDD4E49C2B888 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,143 +252,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1A92C23519125B0A6BF7FBF5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-app-Calculator/Pods-app-Calculator-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAppState/RxAppState.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAppState.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-Calculator/Pods-app-Calculator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BE205EA793CDD4E49C2B888 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-CalculatorTests/Pods-app-CalculatorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D4534A529FCB68752BD678F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-CalculatorTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		798BA5B44AAA978A9331EF98 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-Calculator/Pods-app-Calculator-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD7BA77D482184422A278065 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-app-Calculator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEBA7F04B339B81F421C38C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-app-CalculatorTests/Pods-app-CalculatorTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAppState/RxAppState.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/Cucumberish/Cucumberish.framework",
-				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAppState.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cucumberish.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-CalculatorTests/Pods-app-CalculatorTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F97E85820EA5442008EECF1 /* Sources */ = {
@@ -595,16 +420,12 @@
 		};
 		9F97E87A20EA5443008EECF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7738E7B69881CD1C5C9DD42B /* Pods-app-Calculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HPVY63L4K;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.axa.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,16 +435,12 @@
 		};
 		9F97E87B20EA5443008EECF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDED4484769A4A5660E28D0F /* Pods-app-Calculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HPVY63L4K;
 				INFOPLIST_FILE = Calculator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.axa.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -633,18 +450,13 @@
 		};
 		9F97E87D20EA5443008EECF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB13DE21E96EAB389255EEF /* Pods-app-CalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HPVY63L4K;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.axa.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,18 +467,13 @@
 		};
 		9F97E87E20EA5443008EECF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 424F6EFB05881C0C6E90C388 /* Pods-app-CalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HPVY63L4K;
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.axa.CalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
