@@ -34,7 +34,7 @@ class CalculatorViewModel: NSObject, ViewModelType {
         return Output( result: resultDriver)
     }
     
-    // MARK: Private Property
+    // MARK: - Private Property
     
     private var disposeBag = DisposeBag()
     private let errorMessage = "Error"
