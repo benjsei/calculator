@@ -1,5 +1,5 @@
 //
-//  CalculatorViewController.swift
+//  AdditionViewController.swift
 //  Calculator
 //
 //  Created by Benjamin Seillier on 02/07/2018.
@@ -9,14 +9,14 @@
 import UIKit
 import RxSwift
 
-class CalculatorViewController: UIViewController {
+class AdditionViewController: UIViewController {
 
     // MARK: - IBOutlet
     
     @IBOutlet weak var field1Textfield: UITextField!
     @IBOutlet weak var field2Textfield: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet var calculatorViewModel: CalculatorViewModel!
+    @IBOutlet var additionViewModel: AdditionViewModel!
     
     // MARK: - Private Property
     
@@ -35,15 +35,15 @@ class CalculatorViewController: UIViewController {
     
     private func bindViewModel() {
         
-        let input = CalculatorViewModel.Input(field1: field1Textfield.rx.text.asObservable(),
+        let input = AdditionViewModel.Input(field1: field1Textfield.rx.text.asObservable(),
                                               field2: field2Textfield.rx.text.asObservable())
         
-        let output = calculatorViewModel.transform(input: input)
+        let output = additionViewModel.transform(input: input)
         
         driveOutput(output: output)
     }
 
-    private func driveOutput(output: CalculatorViewModel.Output) {
+    private func driveOutput(output: AdditionViewModel.Output) {
         
         output.result
             .drive(resultLabel.rx.text)

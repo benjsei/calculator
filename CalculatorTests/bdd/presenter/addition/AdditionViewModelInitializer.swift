@@ -1,6 +1,6 @@
 //
-//  CalculatorViewModelInitializer.swift
-//  Calculator
+//  AdditionViewModelInitializer.swift
+//  Addition
 //
 //  Created by Benjamin Seillier on 20/02/2017.
 //  Copyright © 2018 Benjamin Seillier. All rights reserved.
@@ -17,18 +17,18 @@ import RxBlocking
 @testable import Calculator
 
 @objc
-public class CalculatorViewModelInitializer: NSObject {
+public class AdditionViewModelInitializer: NSObject {
     @objc public class func cucumberishSwiftInit() {
         
         let disposeBag = DisposeBag()
         
-        var input: CalculatorViewModel.Input!
-        var output: CalculatorViewModel.Output!
+        var input: AdditionViewModel.Input!
+        var output: AdditionViewModel.Output!
         var field1Value : String?
         
         before { (scenario) -> Void in
             
-            if scenario?.tags?.contains("calculatorViewModel") ?? false {
+            if scenario?.tags?.contains("AdditionViewModel") ?? false {
                 
                
             }
@@ -51,12 +51,12 @@ public class CalculatorViewModelInitializer: NSObject {
                 return
             }
             
-            let calculatorViewModel = CalculatorViewModel()
+            let additionViewModel = AdditionViewModel()
             
             input = createInput(field1: Observable.just(field1Value),
-                                field2: Observable.just(args[0]))
+                                field2: Observable.just(args.first))
             
-            output = calculatorViewModel.transform(input: input)
+            output = additionViewModel.transform(input: input)
             output.result.drive().disposed(by: disposeBag)
         }
         
@@ -67,21 +67,21 @@ public class CalculatorViewModelInitializer: NSObject {
                 return
             }
             
-            let resultExcepted = args[0]
+            let resultExcepted = args.first
             
             let result = try! output.result.toBlocking().first()!
             
             XCTAssertEqual(resultExcepted, result)
         }
         
-        let bundle = Bundle(for: CalculatorViewModelInitializer.self)
-        Cucumberish.executeFeatures(inDirectory: "features/presenter/calculator", from: bundle, includeTags: nil, excludeTags: nil)
+        let bundle = Bundle(for: AdditionViewModelInitializer.self)
+        Cucumberish.executeFeatures(inDirectory: "features/presenter/addition", from: bundle, includeTags: nil, excludeTags: nil)
     }
     
     public class func createInput(field1: Observable<String?> = Observable.never(),
-                                  field2: Observable<String?> = Observable.never()) -> CalculatorViewModel.Input {
+                                  field2: Observable<String?> = Observable.never()) -> AdditionViewModel.Input {
         
-        return CalculatorViewModel.Input(field1: field1,
+        return AdditionViewModel.Input(field1: field1,
                                          field2: field2)
     }
     
