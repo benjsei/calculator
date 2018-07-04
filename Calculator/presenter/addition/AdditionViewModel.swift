@@ -1,5 +1,5 @@
 //
-//  CalculatorViewModel.swift
+//  AdditionViewModel.swift
 //  Calculator
 //
 //  Created by Benjamin Seillier on 02/07/2018.
@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-class CalculatorViewModel: NSObject, ViewModelType {
+class AdditionViewModel: NSObject, ViewModelType {
     
     // MARK: - Public Property
     

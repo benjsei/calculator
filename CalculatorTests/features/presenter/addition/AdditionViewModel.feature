@@ -1,5 +1,5 @@
-@calculatorViewModel
-Feature: Rules of operator
+@additionViewModel
+Feature: addition
 
 Scenario: I add 4 and 5 in see 9
 Given I am filling 4 in the first field

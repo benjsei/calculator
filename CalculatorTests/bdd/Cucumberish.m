@@ -11,5 +11,6 @@
 __attribute__((constructor))
 void CucumberishInit()
 {
-    [CalculatorViewModelInitializer cucumberishSwiftInit];
+    [AdditionViewModelInitializer cucumberishSwiftInit];
+    [OddViewModelInitializer cucumberishSwiftInit];
 }
